@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-zinc-500 h-dvh w-dvw flex justify-center items-center *:font-sans *:font-medium ">
+    <div class="bg-neutral-950 h-auto w-64 px-3 py-4 rounded-xl shadow-black shadow-md">
+
+        <input class="bg-neutral-950 w-full h-24 mb-2 focus:outline-none overflow-hidden text-white text-3xl text-right over"  type="text" name="display" id="display" readonly>
+        <div class="grid grid-cols-4 gap-2 text-lg justify-items-center items-center"> 
+            <button onclick="Clear()" class="text-white bg-neutral-800 h-12 w-12 rounded-full hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">AC</button>
+            <button onclick="Display('%')" class="text-white bg-neutral-800 h-12 w-12 rounded-full hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">%</button>
+            <button onclick="Delete()" class="text-white bg-neutral-800 h-12 w-12 rounded-full hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">DEL</button>
+            <button onclick="Display('&#247')" class="text-white bg-neutral-800 h-12 w-12 pb-2 rounded-full text-3xl hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-2xl hover:ease-out duration-300 ">&#247</button>
+            <button onclick="Display('7')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">7</button>
+            <button onclick="Display('8')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">8</button>
+            <button onclick="Display('9')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">9</button>
+            <button onclick="Display('&#215')" class="text-white bg-neutral-800 h-12 w-12 pb-2 rounded-full text-3xl hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-2xl hover:ease-out duration-300">&#215</button>
+            <button onclick="Display('4')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">4</button>
+            <button onclick="Display('5')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">5</button>
+            <button onclick="Display('6')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">6</button>
+            <button onclick="Display('-')" class="text-white bg-neutral-800 h-12 w-12 pb-2 rounded-full text-3xl hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-2xl hover:ease-out duration-300">&#8722</button>
+            <button onclick="Display('1')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">1</button>
+            <button onclick="Display('2')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">2</button>
+            <button onclick="Display('3')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">3</button>
+            <button onclick="Display('+')" class="text-white bg-neutral-800 h-12 w-12 pb-2 rounded-full text-3xl hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-2xl hover:ease-out duration-300">+</button>
+            <button onclick="Display('00')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">00</button>
+            <button onclick="Display('0')" class="text-white bg-neutral-700 h-12 w-12 rounded-full hover:bg-neutral-600 hover:h-11 hover:w-11 hover:text-base hover:ease-out duration-300">0</button>
+            <button onclick="Display('.')" class="text-white bg-neutral-700 h-12 w-12 pb-2 rounded-full text-3xl hover:bg-neutral-700 hover:h-11 hover:w-11 hover:text-2xl hover:ease-out duration-150">.</button>
+            <button onclick="Answer()" class="text-white bg-orange-500 h-12 w-12 pb-2 rounded-full text-3xl hover:h-11 hover:w-11 hover:text-2xl hover:ease-out duration-300">=</button>
+        </div>
+    </div>
+
+    <script src="Calculator.js"></script>
+</body>
+</html> 
